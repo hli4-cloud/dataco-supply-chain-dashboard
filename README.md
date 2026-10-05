@@ -15,7 +15,6 @@ A Power BI report on 181,000 order lines from a global supply chain operation, b
 ## Data
 
 | | |
-|---|---|
 | Source | [DataCo Smart Supply Chain (Kaggle)](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis) |
 | Size | 181k rows, 53 columns |
 | Period | January 2015 – January 2018 |
