@@ -14,7 +14,7 @@ A Power BI report on 181,000 order lines from a global supply chain operation, b
 
 ## Data
 
-Source | [DataCo Smart Supply Chain (Kaggle)](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
+Source |  [DataCo Smart Supply Chain (Kaggle)](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
 
 Size | 181k rows, 53 columns
 
@@ -34,7 +34,7 @@ Scope | 5 markets, 50 product categories, 4 shipping modes
 
 ![Data model](images/model.png)
 
-**DAX** — 13 measures grouped into delivery, sales, volume and time intelligence. Cancelled orders are excluded from the delivery denominator inside the measure rather than filtered out during cleaning, so the underlying data stays complete and the exclusion is visible in the code.
+**DAX** — 13 measures grouped into delivery, sales, volume and time intelligence. Cancelled orders are excluded from the delivery denominator inside the measure rather than filtered out during cleaning, so the underlying data stays complete and the exclusion is visible in the code. Findings were checked against the underlying distribution rather than taken from the aggregate — the 100% figure was confirmed by listing actual transit days per shipping mode before it was written up.
 
 ---
 
@@ -44,7 +44,8 @@ Scope | 5 markets, 50 product categories, 4 shipping modes
 
 Scheduled lead time for First Class is 1 day, while actual shipping averages 2 days. The commitment is not achievable under current operations. Standard Class, with a 4-day promise, is late only 39.85% of the time on the same network.
 
-Resetting the First Class promise to match observed performance would move on-time delivery from [填: X]% to [填: X]% without changing anything operationally. The alternative — leaving the promise and fixing the network — would require cutting roughly [填: X] day off the average transit time.
+Resetting the First Class promise from 1 day to 2 would move on-time delivery from 0% to 100%, since every First Class shipment arrives in 
+exactly 2 days. The alternative — keeping the promise and fixing the network — would require cutting a full day off the average transit time.
 
 **2. [填: 品类/市场] generates [填: X]% of revenue but runs the thinnest margin at [填: X]%.**
 
@@ -87,6 +88,11 @@ The gap comes from grain and scope: Excel averages over lines, the measure count
 
 ## Limitations
 
+- Transit times show no variation within a shipping mode — every First Class shipment takes exactly 2 days. Real operations have a distribution; this is an artefact of simulated data. The planning-versus-execution distinction still holds, but the 0%-to-100% figure would be a range in practice.
+- Data ends 31 January 2018 and that month is partial. The drop at the end of the trend line is the cutoff, not a decline.
+- 2015 has no prior year in the data, so year-over-year is blank for it.
+- Location names are partly in Spanish, which limits map-based analysis; geographic cuts use market and region instead.
+- The dataset is simulated. The method transfers; the specific numbers describe this dataset only.
 - Data ends 31 January 2018 and that month is partial. The drop at the end of the trend line is the cutoff, not a decline.
 - 2015 has no prior year in the data, so year-over-year is blank for it.
 - Location names are partly in Spanish, which limits map-based analysis; geographic cuts use market and region instead.
