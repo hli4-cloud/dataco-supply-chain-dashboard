@@ -49,11 +49,9 @@ exactly 2 days. The alternative — keeping the promise and fixing the network �
 
 **2. Fishing generates 25.2% of revenue but runs the thinnest margin at 12.19%.**
 
-[填: 写你从 Market 对比图和 Top 10 品类利润图里看到的。哪个市场或品类卖得多但不赚钱？哪个品类是亏的？]
+**3. 18.71% of order lines are sold at a loss, and discount depth does not explain it.**
 
-**3. [填: X]% of order lines are sold at a loss, and discount depth explains part of it.**
-
-[填: 写你从折扣散点图里看到的。折扣率高的品类，利润率是不是明显更低？有没有例外？]
+Plotting average discount against margin by category shows no stable relationship — the ranking reshuffles from year to year, with the deepest-discounted categories landing on both ends of the margin range depending on the period. If discounting were the driver, the pattern would hold. It does not, which points the question at product cost and mix rather than at pricing policy.
 
 ---
 
