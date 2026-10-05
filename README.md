@@ -47,7 +47,11 @@ Scheduled lead time for First Class is 1 day, while actual shipping averages 2 d
 Resetting the First Class promise from 1 day to 2 would move on-time delivery from 0% to 100%, since every First Class shipment arrives in 
 exactly 2 days. The alternative — keeping the promise and fixing the network — would require cutting a full day off the average transit time.
 
-**2. Fishing generates 25.2% of revenue but runs the thinnest margin at 12.19%.**
+**2. Margin is flat across markets — 11.5% to 12.4% on revenue that ranges from 2M to 10M.**
+
+Europe and LATAM each turn over roughly 9–10M, Africa 2M, and all five markets land within a single percentage point of each other on margin. Pacific Asia is lowest at 11.5%, USCA highest at 12.4%. Scale is not buying margin, and geography is not costing it.
+
+That uniformity is the finding. Where a business has genuinely different cost-to-serve by region, margins diverge. Here they do not, which means the margin question belongs one level down — at product, not at market.
 
 **3. 18.71% of order lines are sold at a loss, and discount depth does not explain it.**
 
@@ -65,7 +69,7 @@ Late-delivery rate by shipping mode and market, with scheduled versus actual tra
 
 **Page 2 — Sales & Profitability**
 
-Revenue and margin by market and category, a discount-versus-margin scatter, and year-over-year comparison. [填: 说明截图里选的是哪一年，比如 "Filtered to 2017; 2018 holds one month of data only."]
+Revenue and margin by market and category, a discount-versus-margin scatter, and year-over-year comparison. Filtered to 2017.
 
 ![Sales & Profitability](images/page2-sales.png)
 
@@ -77,8 +81,8 @@ Every delivery figure was recalculated independently in Excel with a PivotTable.
 
 | Method | Late delivery rate |
 |---|---|
-| Excel — average of the late flag across 181k order lines | [填: X]% |
-| Power BI — late orders ÷ shipped orders, de-duplicated to order level, cancellations excluded | [填: X]% |
+| Excel — average of the late flag across 181k order lines | 54.83% |
+| Power BI — late orders ÷ shipped orders, de-duplicated to order level, cancellations excluded | 57.31% |
 
 The gap comes from grain and scope: Excel averages over lines, the measure counts distinct orders and drops cancelled shipments. Neither is wrong, but a report that quotes one while a spreadsheet quotes the other will not survive a review meeting.
 
