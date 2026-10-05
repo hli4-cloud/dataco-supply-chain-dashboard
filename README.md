@@ -47,7 +47,7 @@ Scheduled lead time for First Class is 1 day, while actual shipping averages 2 d
 Resetting the First Class promise from 1 day to 2 would move on-time delivery from 0% to 100%, since every First Class shipment arrives in 
 exactly 2 days. The alternative — keeping the promise and fixing the network — would require cutting a full day off the average transit time.
 
-**2. [填: 品类/市场] generates [填: X]% of revenue but runs the thinnest margin at [填: X]%.**
+**2. Fishing generates 25.2% of revenue but runs the thinnest margin at 12.19%.**
 
 [填: 写你从 Market 对比图和 Top 10 品类利润图里看到的。哪个市场或品类卖得多但不赚钱？哪个品类是亏的？]
 
